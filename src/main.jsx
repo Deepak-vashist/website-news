@@ -2,15 +2,15 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { HashRouter } from 'react-router-dom'
 import App from './App.jsx'
-import { CartProvider } from './context/CartContext.jsx'
+import { PrefsProvider } from './context/PrefsContext.jsx'
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <HashRouter>
-      <CartProvider>
+      <PrefsProvider>
         <App />
-      </CartProvider>
+      </PrefsProvider>
     </HashRouter>
   </StrictMode>,
 )
